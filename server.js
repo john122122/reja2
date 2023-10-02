@@ -1,29 +1,28 @@
-console.log("Web Serverni boshlash");
-const express = require("express");
-const app = express();
-const http = require("http");
+const http =require("http");
+const mongodb = require("mongodb");
 
-// 1 kirish code
-app.use(express.static("public"));
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+let db;
+const connectionString = "mongodb+srv://abbosusman2020:wRWhp75AqOhhq9ou@cluster0.aed8vp8.mongodb.net/Reja2";
 
-// 2 Session code
-// 3 Views code
-app.set("views", "views");
-app.set("view engine", "ejs");
+mongodb.connect(
+      connectionString,
+  {
+    useNewurlParser: true,
+    useUnifiedTopology: true,
+  },
+  (err, client) => {
+    if (err) console.log("ERROR on connection MongoDB");
+    else {
+        console.log("MongoDB connection succeed");
+        module.exports = client;
 
-// 4 Routing code
-app.get("/", function (req, res) {
-   res.render();
-});
-
-app.get("/car", function (req, res) {
-    res.end("Siz moshinalar bilmidasz");
- });
- 
-const server = http.createServer(app);
-let PORT = 3000;
-server.listen(PORT, function () {
-   console.log(`The server is running successfully on port: ${PORT}`);     
-});
+        const app = require("./app");
+        const server = http.createServer(app);
+        let PORT = 3000;
+        server.listen(PORT, function () {
+            console.log(`The server is running successfully on port: ${PORT}, http://localhost:${PORT}`
+            );
+        });
+    }
+  }
+);
