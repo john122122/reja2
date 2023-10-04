@@ -95,15 +95,3 @@ document.getElementById("clean-all").addEventListener("click", function () {
       console.log("Please try again");
     });
 });
-
-
-
-
-// document.getElementById("clean-all").addEventListener("click", function () {
-//     axios.post("/delete-all", { delete_all: true }).then(response => {
-//         alert(response.data.state);
-//         document.location.reload();
-//     }).catch((err) => {
-//       console.log("Please try again");
-//     });
-// });
