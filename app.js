@@ -1,7 +1,18 @@
 console.log("Web Serverni boshlash");
 const express = require("express");
+const res = require("express/lib/response");
 const app = express();
+const http = express("http");
 const fs = require("fs");
+
+let user;
+fs.readFile("database/user.json", "utf8", (err, data) => {
+   if(err) {
+    console.log("ERROR:", err);
+   } else {
+    user = JSON.parse(data)
+   }
+});
 
 // MongDB chaqirish
 const db = require("./server").db();
@@ -9,15 +20,11 @@ const mongodb = require("mongodb");
 
 // MongoDB connect
 
-
 // 1 Kirish codlari
-
 // Har qanday browserdan kelayotgan requestlar uchun public folder ochiq degani
 app.use(express.static("public"));
-
 //json formatdagi data ni objectga exchage qilish
 app.use(express.json());
-
 // html formdan qabul qilinadigan data larni serverga kiritish uchun
 app.use(express.urlencoded({ extended: true }));
 
@@ -84,7 +91,6 @@ app.post("/delete-all", (req, res) => {
 });
 
 // author
-
 app.get("/author", function (req, res) {
   res.render("author", { user: user });
 });
@@ -110,3 +116,4 @@ app.get("/gift", function (req, res) {
 });
 
 module.exports = app;
+
