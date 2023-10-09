@@ -63,19 +63,22 @@
 
                  <!-- aboutga tegishli qisim -->
 
-           <div class="left_2_about">
-            
-            <div> <span class="age_id">Age:</span>
-                <%=user.age%>
+           <div class="left_2">
+            <div class="left_2-1">
+                <div class="left_2_info">Age</div>
+                <div class="left_2_infor"><%=user.age%></div>
             </div>
-            <div> <span class="about_id">Residence:</span>
-                <%=user.residence%>
+            <div class="left_2-1">
+                <div class="left_2_info">Residence</div>
+                <div class="left_2_infor"><%=user.residence%></div>
             </div>
-            <div> <span class="about_id_2">Freelance:</span>
-                <%=user.freelance%>
+            <div class="left_2-1">
+                <div class="left_2_info">Freelance</div>
+                <div class="left_2_infor"><%=user.freelance%></div>
             </div>
-            <div> <span class="about_id_3">Address:</span>
-                <%=user.address%>
+            <div class="left_2-1">
+                <div class="left_2_info">Address</div>
+                <div class="left_2_infor"><%=user.address%></div>
             </div>
         </div>
 
@@ -84,31 +87,26 @@
               <!-- language qismi -->
 
     <div class="left_3">
-         <span class="Languages">Languages</span>
 
-    <div><span class="Uzbek">Uzbek</span>
-        <img src="img/line.png"srcset="img/line@2x.png 2x,img/line@3x.png 3x"class="Line">
-          <span>100%</span>
-          <div class="Rectangle-8">
-    
-    <div><span class="English">English</span>
-        <span>80%</span>
-        <img src="img/line.png"srcset="img/line@2x.png 2x,img/line@3x.png 3x"class="Line">
-            <div class="Rectangle-9">
-    
-    <div><span class="Spanish">Spanish</span>
-        <span>60%</span> 
-        <img src="img/line.png"srcset="img/line@2x.png 2x,img/line@3x.png 3x"class="Line">
-            <div class="Rectangle-11"> 
-          </div>
-        </div>
-       </div>
-      </div>
-     </div>
+         <div><span class="Languages">Languages</span></div>
+         <div class="lang">
+              <div><%=user.language%>Uzbek</div>
+              <div>100%</div>
+         </div>
+         <div class="line-1"></div>
+
+         <div class="lang">
+            <div><%=user.language%>Korean</div>
+            <div>80%</div>
+         </div>
+         <div class="line-2"></div>
+         <div class="lang">
+            <div><%user.language%>English</div>
+            <div>70%</div>
+         </div>
+         <div class="line-3"></div>
     </div>
-  </div>
-
-          <div class="marginer"></div>
+<div class="marginer"></div>
 
           <!-- skill qismi -->
 
@@ -237,25 +235,47 @@
 <div class="marginer"></div>
 
      <div class="right_frame">
-        <div class="Rectangle-25">
-            <div><img src="menu_icon/contrast.png" srcset="menu_icon/contrast@2x.png 2x, menu_icon/contrast@3x.png 3x" class="Contrast">
-               <div><img src="menu_icon/pop-up.png" srcset="menu_icon/pop-up@2x.png 2x, menu_icon/pop-up@3x.png 3x" class="Pop-up">
-                 <div><img src="menu_icon/home.svg" class="Home">
-                    <div><img src="menu_icon/service.png" srcset="img/service@2x.png 2x, img/service@3x.png 3x" class="Service">
-                      <div><img src="images/cv.png" srcset="images/cv@2x.png 2x, images/cv@3x.png 3x" class="Cv">
-                        <div><img src="menu_icon/portfolio.svg" class="Portfolio">
-                          <div><img src="images/blog.png" srcset="images/blog@2x.png 2x, images/blog@3x.png 3x" class="Blog">
-                            <div><img src="images/contact.png" srcset="images/contact@2x.png 2x, images/contact@3x.png 3x" class="Contact">
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                </div>
-             </div>
+        <div class="right_sections">
+            
+            <div class="right_1">
+               <img src="menu_icon/contrast.png" srcset="menu_icon/contrast@2x.png 2x, menu_icon/contrast@3x.png 3x" class="Contrast">
+            </div>
+            
+            <div class="right_icon_2">
+               <img src="menu_icon/pop-up.png" srcset="menu_icon/pop-up@2x.png 2x, menu_icon/pop-up@3x.png 3x" class="Pop-up">
+            </div> 
+            
+            <div class="right_icon_2">
+               <img src="menu_icon/home.svg" class="Home">
+            </div> 
+            
+            <div class="right_icon_2">
+               <img src="menu_icon/service.png" srcset="img/service@2x.png 2x, img/service@3x.png 3x" class="Service">                 
+            </div>   
+            
+            <div class="right_icon_2">  
+               <img src="images/cv.png" srcset="images/cv@2x.png 2x, images/cv@3x.png 3x" class="Cv">
+            </div>
+            
+            <div class="right_icon_2">   
+               <img src="menu_icon/portfolio.svg" class="Portfolio">
+            </div>  
+            
+            <div class="right_icon_2">
+               <img src="images/blog.png" srcset="images/blog@2x.png 2x, images/blog@3x.png 3x" class="Blog">
+            </div>
+            
+            <div class="right_icon_2">
+               <img src="images/contact.png" srcset="images/contact@2x.png 2x, images/contact@3x.png 3x" class="Contact">
            </div>
+            
+        </div>
         </div>  
-    </div>
+    
 </div>
+</div>
+</div>
+</div>     
+   
 </body>
 </html>

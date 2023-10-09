@@ -148,27 +148,71 @@
     border: 1.5px solid red;
   }
 
-  .main_frame .left_frame .left_2_about {
+  /* `````````````````````````````````````````*/
+     
+                   /* chap tomon 2-section */
+             /* Age, Residence, Freelance, Address */
+
+  .main_frame .left_frame .left_2 {
     position: relative;
     display: flex;
     width: 221px;
     height: 126px;
     margin-left: 44px;
     flex-direction: column;
-    /* background-color: aqua; */
+
   }
-  
-   
-  /* .left-icons {
+
+   .main_frame .left_frame .left_2 .left_2-1 {
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     flex-direction: row;
-    width: 223px;
-    margin-top:9px;
-    border: 1px solid red;
-  } */
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    justify-content: space-between;
+   }
+
+   .left_2_info {
+    color: #2b2b2b;
+    font-kerning: none;
+    font-feature-settings: "calt" off;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 10px;
+    text-transform: capitalize;
+    font-size: 23px;
+    background: #ffb400;
+   }
+
+   .left_2_infor {
+    color: #2b2b2b;
+    text-align: right;
+    font-kerning: none;
+    font-feature-settings: "calt" off;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 10px;
+    text-transform: capitalize;
+    margin-bottom: 18px;
+   }
+
+   .left_2_available {
+    color: yellowgreen;
+    text-align: right;
+    font-kerning: none;
+    font-feature-settings: "calt" off;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 10px;
+    text-transform: capitalize;
+    margin-bottom: 18px;
+   }
 
   /* ```````````````````````````````````` */
 
@@ -178,29 +222,30 @@
     position: relative;
     width: 220px;
     height: 153px;
-    margin-top: 25px;
-    margin-left: 10px;
+    margin-bottom: 12px;
+    margin-left: 45px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 
     /* background-color: aqua; */
   }
 
-  .Languages {
-    width: 95px;
-    height: 22px;
-    flex-grow: 0;
-    margin-left: 5px;
-    margin-bottom: 10px;
-    font-family: sans-serif;
-    font-size: 25px;
-    font-weight: 500;
-    font-stretch: normal;
+  .Languages { /* umumiy til sectionga qiymat */
+    width: 95px; 
+    height: 22px; 
+    margin-bottom: 10px; 
+    font-family: sans-serif; 
+    font-size: 25px; 
+    font-weight: 500; 
     font-style: normal;
-    line-height: 1.24;
-    letter-spacing: normal;
-    text-align: left;
-    color: #2b2b2b;
+  }
+
+  .lang { /* har bir xil qiymatlarga shakil berish*/
+    margin-bottom: 10px; /* qiymatni tepaga siljitadi*/
+    margin-top: 17px; /*qiymatni pastga siljitadi*/
+    font-family: sans-serif;
+
+
   }
    
   .Uzbek {
@@ -670,13 +715,15 @@
 
   .main_frame .midd_frame {
         position: relative;
-        width: 970px;
-        height: 1259px;
-        display: flex;
-        flex-direction: row;
-        margin-left: 30px;
-        margin-right: 27px;
-        border: 1px solid red;
+        margin-bottom: 60px;
+        /* font-size: 38px; */
+        /* margin: 17.1px 31.1px 15px 16px; */
+        /* width: 970px; */
+        /* height: 1259px; */
+        /* display: flex; */
+        /* flex-direction: row; */
+        /* margin-left: 30px;
+        margin-right: 27px; */
   }
 
   .Background-Image {
@@ -725,8 +772,6 @@
     text-align: left;
     color: #767676;
   }
-
-  
 
   img.ButtonBook-Me {
     width: 154.2px;
@@ -942,9 +987,9 @@
     /* Ung tamonini boshladishi */
 
   .right_frame {
-        position: relative;
-        align-items: center;
-        display: flex;
+        /* position: relative; */
+        /* align-items: center; */
+        /* display: flex; */
         flex-direction: column;
         border: 1px solid red;
         width: 110px;
@@ -953,11 +998,12 @@
   }
 
   img.Contrast {
-    width: 30px;
+    margin-top: 40px;
+    /* width: 30px;
     height: 30px;
     flex-grow: 0;
     margin: 0 17px 174px 18px;
-    object-fit: contain;
+    object-fit: contain; */
   }
 
   img.Pop-up {
@@ -969,11 +1015,16 @@
   }
 
   img.Home {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 30px;
     flex-grow: 0;
-    margin: 5px 12px 0 13px;
-    object-fit: contain;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+    flex-direction: column;
+    margin-top: 200px;
   }
 
   img.Service {
@@ -982,6 +1033,7 @@
     flex-grow: 0;
     margin: 43px 12px 43px 13px;
     object-fit: contain;
+    margin-left: auto;
   }
 
   img.Cv {
@@ -990,6 +1042,7 @@
     flex-grow: 0;
     margin: 43px 12px 43px 13px;
     object-fit: contain;
+    margin-left: auto;
   }
 
   img.Portfolio {
@@ -998,6 +1051,7 @@
     flex-grow: 0;
     margin: 43px 12px 43px 13px;
     object-fit: contain;
+    margin-left: auto;
   }
 
   img.Blog {
@@ -1006,6 +1060,7 @@
     flex-grow: 0;
     margin: 43px 12px 43px 13px;
     object-fit: contain;
+    margin-left: auto;
   }
 
   img.Contact {
@@ -1014,6 +1069,7 @@
     flex-grow: 0;
     margin: 43px 12px 0 13px;
     object-fit: contain;
+    margin-left: auto;
   }
 
   .Mobile-app-website-design {
