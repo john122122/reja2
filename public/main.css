@@ -264,22 +264,6 @@
     color: #767676;
   }
 
-  /* span { 
-    width: 38px;
-    height: 24px;
-    flex-grow: 0;
-    margin: 0 0 0 133px;
-    font-family: Inter;
-    font-size: 15px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.6;
-    letter-spacing: normal;
-    text-align: left;
-    color: #767676;
-  }*/
-
   img.Line {
     width: 220px;
     height: 4px;
@@ -303,22 +287,6 @@
     text-align: left;
     color: #767676;
   }
-
-  /* span {
-    width: 31px;
-    height: 24px;
-    flex-grow: 0;
-    margin: 0 0 0 137px;
-    font-family: Inter;
-    font-size: 15px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.6;
-    letter-spacing: normal;
-    text-align: left;
-    color: #767676;
-  } */
 
   .Rectangle-9 {
     width: 208px;
@@ -344,22 +312,6 @@
     color: #767676;
   }
 
-  /* span {
-    width: 31px;
-    height: 24px;
-    flex-grow: 0;
-    margin: 0 0 0 131px;
-    font-family: Inter;
-    font-size: 15px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.6;
-    letter-spacing: normal;
-    text-align: left;
-    color: #767676;
-  } */
-
   .Rectangle-11 {
     width: 190px;
     height: 2px;
@@ -378,7 +330,7 @@
     height: 252px;
     margin-top: 25;
     margin-left: 44px;
-    background-color: aqua;
+    /* background-color: aqua; */
   }
 
   .Skills {
@@ -396,22 +348,6 @@
     text-align: left;
     color: #2b2b2b;
   }
-
-  /* span {
-    width: 31px;
-    height: 24px;
-    flex-grow: 0;
-    margin: 0 0 0 155px;
-    font-family: Inter;
-    font-size: 15px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.6;
-    letter-spacing: normal;
-    text-align: left;
-    color: #767676;
-  } */
 
   .Rectangle-15 {
     width: 209px;
@@ -437,22 +373,6 @@
     color: #767676;
   }
 
-  /* span {
-    width: 31px;
-    height: 24px;
-    flex-grow: 0;
-    margin: 0 0 0 158px;
-    font-family: Inter;
-    font-size: 15px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.6;
-    letter-spacing: normal;
-    text-align: left;
-    color: #767676;
-  } */
-
   .Rectangle-16 {
     width: 207px;
     height: 2px;
@@ -476,22 +396,6 @@
     text-align: left;
     color: #767676;
   }
-
-  /* span {
-    width: 31px;
-    height: 24px;
-    flex-grow: 0;
-    margin: 0 0 0 173px;
-    font-family: Inter;
-    font-size: 15px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.6;
-    letter-spacing: normal;
-    text-align: left;
-    color: #767676;
-  } */
 
   .Rectangle-17 {
     width: 201px;
@@ -517,22 +421,6 @@
     color: #767676;
   }
 
-  /* span {
-    width: 30px;
-    height: 24px;
-    flex-grow: 0;
-    margin: 0 0 0 159px;
-    font-family: Inter;
-    font-size: 15px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.6;
-    letter-spacing: normal;
-    text-align: left;
-    color: #767676;
-  } */
-
   .Rectangle-19 {
     width: 187px;
     height: 2px;
@@ -557,22 +445,6 @@
     color: #767676;
   }
 
-  /* span {
-    width: 31px;
-    height: 24px;
-    flex-grow: 0;
-    margin: 0 0 0 111px;
-    font-family: Inter;
-    font-size: 15px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.6;
-    letter-spacing: normal;
-    text-align: left;
-    color: #767676;
-  } */
-
   .Rectangle-21 {
     width: 207px;
     height: 2px;
@@ -591,7 +463,7 @@
     height: 148px;
     margin-top: 25px;
     margin-left: 45px;
-    background-color: aqua;
+    /* background-color: aqua; */
   }
 
   .Extra-Skills {
