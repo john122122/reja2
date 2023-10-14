@@ -62,7 +62,8 @@ document.addEventListener("click", function (e) {
     if (e.target.classList.contains("edit-me")) {
         let userInput = prompt(
             "O'zgartirish kiriting",
-            e.target.parentElement.parentElement.querySelector(".item-text").innerHTML
+            e.target.parentElement.parentElement.querySelector(".item-text")
+            .innerHTML
         );
         if (userInput) {
             axios
@@ -89,9 +90,7 @@ document.getElementById("clean-all").addEventListener("click", function () {
     .post("/delete-all", { delete_all: true })
     .then((response) => {
       alert(response.data.state);
-      document.location.reload();
-    })
-    .catch((err) => {
-      console.log("Please try again");
+      // document.location.reload();
+      document.querySelector("#item-list").innerHTML = "";
     });
 });
